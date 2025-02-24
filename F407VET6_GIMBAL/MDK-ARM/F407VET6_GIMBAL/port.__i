@@ -1,0 +1,8 @@
+-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -c
+-fno-rtti -funsigned-char -fshort-enums -fshort-wchar
+-gdwarf-4 -O3 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -Wno-reserved-identifier -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Middlewares/Third_Party/FreeRTOS/Source/include -I ../Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS -I ../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../application/Algorithm/EKF -I ../application/Algorithm/kalman -I ../application/Algorithm/mahony -I ../application/Algorithm/PID -I ../application/Algorithm/VMC -I ../application/APP -I ../application/Bsp -I ../application/Devices/BMI088 -I ../application/Algorithm/function
+-I./RTE/_F407VET6_GIMBAL
+-I"D:/app/keil stm32/pack/ARM/CMSIS/5.9.0/CMSIS/Core/Include"
+-I"D:/app/keil stm32/pack/STM32F4xx.DFP/Drivers/CMSIS/Device/ST/STM32F4xx/Include"
+-D__UVISION_VERSION="539" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx
+-o f407vet6_gimbal/port.o -MD "../Middlewares/Third_Party/FreeRTOS/Source/portable/RVDS/ARM_CM4F/port.c"
